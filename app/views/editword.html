@@ -1,4 +1,4 @@
-<div ng-controller="EditWordCtrl as editWord">
+<div ng-controller="EditWordCtrl as editWord" ng-keypress="editWord.changeCategoryByKey($event)">
   <p>Place the word below in a category</p>
   
   <div layout="row">

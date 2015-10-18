@@ -22,7 +22,17 @@ angular.module('bonmotApp')
     self.wordStats = WordService.words[0];
     self.categories = CategoryService.categories;
   
-    self.changeCategory = function(category) {
+    self.changeCategory = function (category) {
+      console.log = "Aha";
       self.wordStats.category = category;
+    };
+  
+    self.changeCategoryByKey = function (keyEvent) {
+      console.log = "Baha";
+      self.wordStats.category = keyEvent;
+      /*for (category in categories) {
+        //if (keyEvent.which === 
+        self.wordStats.category = keyEvent;
+      }*/
     };
   });
