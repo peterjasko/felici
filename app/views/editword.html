@@ -1,0 +1,30 @@
+<div ng-controller="EditWordCtrl as editWord">
+  <p>Place the word below in a category</p>
+  
+  <div layout="row">
+    <md-card flex="75">
+      <md-card-content><h2>{{editWord.word}}</h2></md-card-content>
+      <md-card-footer>
+        Frequency: {{editWord.wordStats.frequency | number : 0}}
+        <span flex></span>
+        Category: {{editWord.wordStats.category}}
+      </md-card-footer>
+    </md-card>
+  </div>
+  
+  <div layout="row">
+    <md-card flex="25" ng-repeat="category in editWord.categories">
+      <md-card-content>
+        {{category.label}}
+        <h2>{{category.keystroke}}</h2>
+        <md-button class="md-fab md-primary" aria-label="{{category.label}}" ng-click="editWord.changeCategory(category.label)">
+          <md-tooltip>
+            {{category.label}}
+          </md-tooltip>
+          <md-icon icon="img/icons/ic_play_arrow_24px.svg"></md-icon>
+        </md-button>
+      </md-card-content>
+    </md-card>
+  </div>
+  
+</div>

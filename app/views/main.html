@@ -1,0 +1,66 @@
+<div ng-controller="MainCtrl as main">
+
+  <div layout="row">
+    <md-card flex="50">
+      <md-card-content>Word lists</md-card-content>
+      <md-card-footer>
+        Card footer <i class="material-icons">accessibility</i>
+        <md-button class="md-fab md-primary" aria-label="Play" ng-click="openToast()">
+          <md-tooltip>
+            Open a Toast!
+          </md-tooltip>
+          <md-icon icon="img/icons/ic_play_arrow_24px.svg"></md-icon>
+        </md-button>
+      </md-card-footer>    
+    </md-card>
+    <md-card flex="50">
+      <md-card-content>Some content {{main.username}}</md-card-content>
+      <md-card-footer>
+        Card footer <i class="material-icons">face</i>
+      </md-card-footer>    
+    </md-card>
+  </div>
+
+  <md-divider></md-divider>
+
+  <md-button class="md-fab md-accent" aria-label="Play">
+    <md-tooltip>
+      Say Good Night to Edgar! no
+
+    </md-tooltip>
+    <md-icon icon="img/icons/ic_play_arrow_24px.svg"></md-icon>
+  </md-button>
+
+  <md-tab label disabled md-on-select md-on-deselect>
+    <h3>My Tab content</h3>
+  </md-tab>
+  <md-tab>
+    <md-tab-label>
+      <h3>My Tab content</h3>
+    </md-tab-label>
+    <md-tab-body>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </p>
+    </md-tab-body>
+  </md-tab>
+
+  <div class="row marketing">
+    <h4>Test</h4>
+    <h4>HTML5 Boilerplate</h4>
+    <p>
+      HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    </p>
+
+    <h4>Angular</h4>
+    <p>
+      AngularJS is a toolset for building the framework most suited to your application development.
+    </p>
+
+    <h4>Karma</h4>
+    <p>Spectacular Test Runner for JavaScript.</p>
+  </div>
+</div>
