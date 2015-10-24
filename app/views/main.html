@@ -1,66 +1,133 @@
 <div ng-controller="MainCtrl as main">
-
+  <div layout="row" class="md-accent">
+    <md-card flex="45" class="md-accent" style="background-color:#3F51B5; color:white">
+      <md-card-content >
+        <h1 >Felici company</h1>
+        <p>
+          An experienced company of singers and musicians, bringing classical, opera and musical songs to audiences.
+        </p>
+        <p>
+          In addition to our own events, we perform charity, corporate and personal events tailored to your needs.
+        </p>
+        <p>
+         We are based in the Hertfordshire and Bedfordshire regions
+        </p>
+      
+      </md-card-content>
+    </md-card>
+    <md-card flex="55" >
+      <img height="160" ng-src="images/2015-05_Singers_photo.jpg" class="md-card-image" alt="Mozart">
+      <md-card-content >
+      Felici founders Margaret and Zoe with baritone Tim Hobman
+      </md-card-content>
+      <md-footer>
+      </md-footer>
+    </md-card>
+  </div>
+  <md-divider/>
+  <div layout="row">
+    <md-card  flex="100">
+      <md-card-content>
+        <h2 class="md-title">Upcoming Events</h2>
+        <p>
+          2016 March, 5 - Hoxne, Suffolk - Phantom of the Paris Opera House<br/>
+          2016 April, 23 - Malvern - Charity Concert<br/>
+          2016 May, 9 - Pirton, Herts - Phantom of the Paris Opera House<br/>
+          2016 September - Welwyn Garden City - An evening of Faure<br/>
+          2017 Summer - The Marriage of Figaro, Mozart
+        </p>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div layout="row">
+    <md-card  flex="100">
+      <md-card-content>
+        <h2 class="md-title">Past Events</h2>
+        <p>
+          2015 May - Welwyn Garden City - An Enchanted Evening of Song <br/>
+          2015 March - Harpenden - Corporate club dinner
+        </p>
+      </md-card-content>
+    </md-card>
+  </div>
+  <md-divider/>
+  
+  
+  <h2>Our musical range</h2>
+  <div layout="row">
+    <md-card  flex=33>
+      <img ng-src="images/Croce-Mozart-Detail.jpg" class="md-card-image" alt="Mozart">
+      <md-card-content>
+        <h2 class="md-title">Mozart</h2>
+        <p>
+          Opera and classical songs. From Mozart to Faure via Rossini and Lieder.
+        </p>
+      </md-card-content>
+    </md-card>
+    <md-card  flex=33>
+      <img ng-src="images/Sir_Arthur_Seymour_Sullivan.jpg" class="md-card-image" alt="Mozart">
+      <md-card-content>
+        <h2 class="md-title">Sullivan (G&amp;S)</h2>
+        <p>
+          Opereta and Victorian and Edwardian music hall.
+        </p>
+      </md-card-content>
+    </md-card>
+    <md-card  flex=33>
+      <img ng-src="images/Ivor_Novello_mug.jpg" class="md-card-image" alt="Mozart">
+      <md-card-content>
+        <h2 class="md-title">Ivor Novello</h2>
+        <p>
+         Twentieth century songs from Novello, Sondheim and many others.
+         
+        </p>
+      </md-card-content>
+    </md-card>    
+  </div>
+  <md-divider></md-divider>
+      
   <div layout="row">
     <md-card flex="50">
-      <md-card-content>Word lists</md-card-content>
-      <md-card-footer>
-        Card footer <i class="material-icons">accessibility</i>
-        <md-button class="md-fab md-primary" aria-label="Play" ng-click="openToast()">
-          <md-tooltip>
-            Open a Toast!
-          </md-tooltip>
-          <md-icon icon="img/icons/ic_play_arrow_24px.svg"></md-icon>
-        </md-button>
-      </md-card-footer>    
+      <md-header>
+      </md-header>
+      <md-card-content>
+        <h1 class="md-title">Margaret Johnson, founder</h1>
+        <p >
+         Margaret trained at the Royal College of Music. She has worked
+  as music teacher, primary headteacher and is currently a lay 
+  minister in the Benefice of Holwell, Ickleford and Pirton. She 
+  has been involved with local choirs and musical societies in 
+  North Herts, both as accompanist and conductor, for more years 
+  than she cares to count! More recently Margaret has been MD 
+  for a number of shows for Putteridge Bury G&amp;S Society, 
+  including their current production, Princess Ida. A 
+  founder member of Pirton Players, Margaret has also led many 
+  of their musical productions, most recently Guys and Dolls. 
+  Margaret especially enjoys working as accompanist and 
+  repetiteur.
+          </p>
+      </md-card-content>
     </md-card>
     <md-card flex="50">
-      <md-card-content>Some content {{main.username}}</md-card-content>
-      <md-card-footer>
-        Card footer <i class="material-icons">face</i>
-      </md-card-footer>    
+      <md-card-content>
+        <h1 class="md-title">Zoe Jasko, founder</h1>
+        <p>
+          Zoe  
+        </p>
+      </md-card-content>
     </md-card>
   </div>
-
+    
+    <md-card flex="50">
+      <h1 class="md-title">Contact Us <i class="material-icons">email</i></h1>
+      <md-card-content>
+         Email us at bookings@felici.company
+      </md-card-content>
+    </md-card>
+  
   <md-divider></md-divider>
 
-  <md-button class="md-fab md-accent" aria-label="Play">
-    <md-tooltip>
-      Say Good Night to Edgar! no
 
-    </md-tooltip>
-    <md-icon icon="img/icons/ic_play_arrow_24px.svg"></md-icon>
-  </md-button>
 
-  <md-tab label disabled md-on-select md-on-deselect>
-    <h3>My Tab content</h3>
-  </md-tab>
-  <md-tab>
-    <md-tab-label>
-      <h3>My Tab content</h3>
-    </md-tab-label>
-    <md-tab-body>
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-      </p>
-    </md-tab-body>
-  </md-tab>
 
-  <div class="row marketing">
-    <h4>Test</h4>
-    <h4>HTML5 Boilerplate</h4>
-    <p>
-      HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-    </p>
-
-    <h4>Angular</h4>
-    <p>
-      AngularJS is a toolset for building the framework most suited to your application development.
-    </p>
-
-    <h4>Karma</h4>
-    <p>Spectacular Test Runner for JavaScript.</p>
-  </div>
 </div>

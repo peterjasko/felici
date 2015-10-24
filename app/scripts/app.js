@@ -41,6 +41,10 @@ angular
   })
   .config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default') //.dark()
-      .primaryPalette('pink')
-      .accentPalette('orange');
+      .primaryPalette('pink', {
+        'default' : '800',
+        'hue-1': '700'
+      })
+      
+      .accentPalette('blue');
   });
